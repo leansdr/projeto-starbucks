@@ -252,24 +252,24 @@ footer {
      }
 
      .area1 {
-       grid-template-columns: 3fr, 2fr;
+       grid-template-columns: 3fr 2fr;
      }
 
      .area2 {
-       grid-template-columns: 2fr, 3fr;
+       grid-template-columns: 2fr 3fr;
      }
 
      .area3 {
-       grid-template-columns: 3fr, 2fr;
+       grid-template-columns: 3fr 2fr;
      }
 
      .area4 {
-       grid-template-columns: 2fr, 8fr;
+       grid-template-columns: 2fr 8fr;
      }
 }
 
-@media (min-width:320px) and (max-width:425px) {
-  .container {
+@media (max-width:425px) {
+  .container{
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -279,24 +279,28 @@ footer {
   }
 
   .header--search input {
-    max-width:80px;
+    max-width: 80px;
   }
 
   .banner h1 {
     font-size: 50px;
     line-height: 50px;
+    padding-left: 30px;
   }
 
-  h2 {
-    font-size: 25px;
-    line-height: 30px;
+  .banner span {
+    padding-left: 30px;
+  }
+
+  .banner--images  {
+    padding-left: 10px;
   }
 
   .banner--images img {
     width: 70px;
-    height:80px;
-    border-radius: 50%;
+    height: 80px;
     border: 3px solid #117050;
+    border-radius: 50%;
     margin-right: 10px;
   }
 
@@ -322,6 +326,4 @@ footer {
     font-size: 12px;
     padding: 40px 20px;
   }
-
-  
 }
